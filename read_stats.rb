@@ -10,7 +10,7 @@ def get_count(url)
   return count
 end
 
-URL = URI.parse('http://46.245.228.11:9200/benchmark/_stats/docs')
+URL = URI.parse('http://ELASTICSEARCH_IP:9200/benchmark/_stats/docs')
 COUNT = 100000
 
 initial_count = get_count(URL)

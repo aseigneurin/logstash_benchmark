@@ -1,6 +1,6 @@
 Prepare:
 
-    $ curl -XPOST http://46.245.228.11:9200/benchmark/
+    $ curl -XPOST http://ELASTICSEARCH_IP:9200/benchmark/
     $ touch benchmark.log
 
 Start Logstash and wait for it to be ready:
@@ -13,5 +13,5 @@ Produce logs:
 
 Before doing another run:
 
-    $ curl -XDELETE http://46.245.228.11:9200/benchmark/
+    $ curl -XDELETE http://ELASTICSEARCH_IP:9200/benchmark/
     $ rm benchmark.log
